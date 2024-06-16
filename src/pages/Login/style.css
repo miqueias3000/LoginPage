@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+    padding-top: 0;
+}
+
+.boxLogin {
+    h1 {
+        color: rgb(91, 0, 209);
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 15px;
+    
+        & i {
+            padding: 10px;
+            font-size: 30px;
+        }
+    }
+    
+    & p {
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: gray;
+    }
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 450px;
+    margin-bottom: 20px;
+
+    & button {
+        border-radius: 10px;
+        background-color: rgb(91, 0, 209);
+        height: 55px;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        color: #fff;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    & button:hover {
+        background-color: cornflowerblue;
+        transition: all 0.2s ease-in-out;
+    }
+
+    & i {
+        padding: 10px;
+        font-size: 25px;
+    }
+    
+    & input {
+        border: solid .1px rgb(91, 0, 209);
+        border-radius: 10px;
+        height: 40px;
+        background-color: #FFF;
+        padding-left: 10px;
+        outline: none;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 100%; /* Certifique-se de que o input ocupe toda a largura do formulário */
+    }
+
+}
+
+.boxRegs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a {
+        text-decoration: none;
+        color: rgb(91, 0, 209);
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    & a:hover {
+        color: cornflowerblue;
+        transition: all .02s ease-in-out;
+    }
+}
+
+
