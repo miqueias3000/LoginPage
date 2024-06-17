@@ -8,13 +8,20 @@
     padding-top: 0;
 }
 
+.imgLogo {
+    width: 230px;
+    margin-bottom: 5px; /* Adiciona espaço entre a imagem e o h1 */
+    justify-content: center;
+
+}
+
 .boxLogin {
+    
     h1 {
         color: rgb(91, 0, 209);
         font-size: 35px;
-        text-align: center;
         margin-bottom: 15px;
-    
+
         & i {
             padding: 10px;
             font-size: 30px;
@@ -23,14 +30,17 @@
     
     & p {
         font-weight: bold;
-        text-align: center;
         font-size: 18px;
         margin-bottom: 15px;
         color: gray;
     }
+    
+    & .error-message { /* Estilização para a mensagem de erro */
+        color: red;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
 }
-
-
 
 form {
     display: flex;
@@ -68,7 +78,15 @@ form {
         padding: 10px;
         font-size: 25px;
     }
-    
+
+    & span { /* Garantir que os spans fiquem alinhados à esquerda */
+        align-self: flex-start;
+        margin-top: 10px; /* Adiciona espaçamento acima dos spans */
+        margin-bottom: 5px; /* Adiciona espaçamento abaixo dos spans */
+        font-weight: bold;
+        color: gray;
+    }
+
     & input {
         border: solid .1px rgb(91, 0, 209);
         border-radius: 10px;
@@ -82,6 +100,9 @@ form {
         width: 100%; /* Certifique-se de que o input ocupe toda a largura do formulário */
     }
 
+    .error-input { /* Estilização para os campos de input em caso de erro */
+        border-color: red;
+    }
 }
 
 .boxRegs {
@@ -101,5 +122,3 @@ form {
         transition: all .02s ease-in-out;
     }
 }
-
-

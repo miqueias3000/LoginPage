@@ -9,6 +9,8 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import './style.css';
 
+import logo from '../../assets/logo.png'
+
 const Sidebar = () => {
   const navigate = useNavigate();
 
@@ -26,7 +28,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul className="sidebar-nav">
         <li className="sidebar-logo">
-          <span className="nav-item">Dashboard</span>
+          <img src={logo} alt="" />
         </li>
         <li>
           <Link to="/dashboard">
