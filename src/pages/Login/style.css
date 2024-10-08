@@ -9,7 +9,7 @@
 }
 
 .imgLogo {
-    width: 230px;
+    width: 130px;
     margin-bottom: 5px; /* Adiciona espaço entre a imagem e o h1 */
     justify-content: center;
 
@@ -19,8 +19,8 @@
     
     h1 {
         color: rgb(91, 0, 209);
-        font-size: 35px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        margin-bottom: 8px;
 
         & i {
             padding: 10px;
@@ -30,7 +30,7 @@
     
     & p {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 15px;
         color: gray;
     }
@@ -47,10 +47,10 @@ form {
     flex-direction: column;
     align-items: center; /* Centraliza os itens horizontalmente */
     gap: 30px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     max-width: 100%;
-    width: 450px;
+    width: 400px;
     margin-bottom: 20px;
 
     & button {

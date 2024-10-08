@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../pages/Login";
 import PassUpdate from "../pages/PassUpdate";
-import DashBord from "../pages/DashBord";
+import Register from "../pages/Register";
 
 export function AppRoutes() {
     return (
@@ -9,7 +9,7 @@ export function AppRoutes() {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/PassUpdate" element={<PassUpdate />} />
-                <Route path="/dashboard" element={<DashBord />} /> {/* Corrija o path para '/dashboard' */}
+                <Route  path="/Register" element={<Register/>}/>
             </Routes>
         </BrowserRouter>
     );
